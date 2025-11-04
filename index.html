@@ -1,1 +1,30 @@
-
+<!-- index.html -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World</title>
+</head>
+<body>
+  <h1>Hello, world!</h1>
+  <p>Welcome to my website.</p>
+</body>
+</html>
+<script>
+  if(window.top === window.self) { // Only if the page isn't already in a frame
+    var win = window.open("about:blank", "_blank");
+    win.document.write(document.documentElement.outerHTML);
+    window.location.href = "about:blank"; // Optionally, clear the original tab
+  }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World</title>
+</head>
+<body>
+  <h1>Hello, world!</h1>
+  <p>Welcome to my website.</p>
+</body>
+</html>
