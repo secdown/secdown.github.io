@@ -3,14 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <title>Have no fear, Gabriel is here</title>
-  <!DOCTYPE html>
-          <html lang="en">
-          <head>
-            <meta charset="UTF-8">
-            <title>Hello World</title>
-          </head>
-          <body>
-            <h1>Hello, world!</h1>
-            <p>Welcome to my website.</p>
-            <img src="https://media.tenor.com/gMFriGOwj0YAAAAe/invincible-are-you-sure.png" alt="Placeholder">
-            <a href="https://secdown.github.io/95button.html" class="btn">Click if you're sure</a>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at center, #222 0%, #000 100%);
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      opacity: 0.7;
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 300px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    }
+
+    .btn {
+      padding: 14px 24px;
+      background: linear-gradient(135deg, #ff4444, #aa0000);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 25px rgba(255, 0, 0, 0.5);
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hello, world!</h1>
+  <p>Welcome to my website.</p>
+
+  <img src="https://media.tenor.com/gMFriGOwj0YAAAAe/invincible-are-you-sure.png" alt="Are you sure?">
+
+  <a href="https://secdown.github.io/95button.html" class="btn">
+    Click if you're sure
+  </a>
+</body>
+</html>
