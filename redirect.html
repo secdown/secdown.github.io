@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting...</title>
+  <title>System Redirect</title>
 
   <link rel="stylesheet" href="https://unpkg.com/98.css">
 
@@ -18,11 +18,20 @@
     }
 
     .window {
-      width: 300px;
+      width: 320px;
     }
 
     .content {
       text-align: center;
+    }
+
+    .progress-container {
+      margin-top: 15px;
+    }
+
+    .percent {
+      margin-top: 8px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -31,19 +40,37 @@
 
   <div class="window">
     <div class="title-bar">
-      <div class="title-bar-text">System Alert</div>
+      <div class="title-bar-text">System Redirect</div>
     </div>
 
     <div class="window-body content">
-      <p><strong>REDIRECT!</strong></p>
-      <p>Please wait...</p>
+      <p><strong>REDIRECTING...</strong></p>
+      <p>Please wait while the system processes your request.</p>
+
+      <div class="progress-container">
+        <progress id="bar" max="100" value="0" style="width: 100%;"></progress>
+        <div class="percent" id="percent">0%</div>
+      </div>
     </div>
   </div>
 
   <script>
-    setTimeout(() => {
-      window.location.href = "https://secdown.github.io/wheresthemoney.html";
-    }, 500); // 2 second delay
+    let progress = 0;
+
+    const bar = document.getElementById("bar");
+    const percent = document.getElementById("percent");
+
+    const interval = setInterval(() => {
+      progress += 2; // speed of loading
+
+      bar.value = progress;
+      percent.textContent = progress + "%";
+
+      if (progress >= 100) {
+        clearInterval(interval);
+        window.location.href = "https://secdown.github.io/95button.html";
+      }
+    }, 50); // update speed
   </script>
 
 </body>
