@@ -67,38 +67,32 @@
   </div>
 
   <script>
-    const bar = document.getElementById("segBar");
-    const segments = 20;
+    const bar = document.getElementById("segBar");
 
-    // Create segments
-    for (let i = 0; i < segments; i++) {
-      const div = document.createElement("div");
-      div.classList.add("segment");
-      bar.appendChild(div);
-    }
+    const segments = 20;
 
-    const nodes = document.querySelectorAll(".segment");
-    let i = 0;
+    // create segments
+    for (let i = 0; i < segments; i++) {
+      const div = document.createElement("div");
+      div.classList.add("segment");
+      bar.appendChild(div);
+    }
 
-    // Changed from 120 to 500 for a 10-second total duration
-    const interval = setInterval(() => {
-      if (i < segments) {
-        nodes[i].classList.add("active");
-        i++;
-      }
+    const nodes = document.querySelectorAll(".segment");
+    let i = 0;
 
-      if (i >= segments) {
-        clearInterval(interval);
-        setTimeout(() => {
-          window.location.href = "https://secdown.github.io/wheresthemoney";
-        }, 500); // Slight pause at the end for effect
-      }
-    }, 500); 
-  </script>
+    const interval = setInterval(() => {
+      nodes[i].classList.add("active");
+      i++;
+
+      if (i >= segments) {
+        clearInterval(interval);
+        setTimeout(() => {
+          window.location.href = "https://secdown.github.io/wheresthemoney";
+        }, 300);
+      }
+    }, 120);
+  </script>
 
 </body>
 </html>
-
-
-
-What is this for
