@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+
+  <style>
+    body {
+      background: teal;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+    }
+
+    .window {
+      width: 300px;
+    }
+
+    .content {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="window">
+    <div class="title-bar">
+      <div class="title-bar-text">System Alert</div>
+    </div>
+
+    <div class="window-body content">
+      <p><strong>REDIRECT!</strong></p>
+      <p>Please wait...</p>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://secdown.github.io/wheresthemoney.html";
+    }, 2000); // 2 second delay
+  </script>
+
+</body>
+</html>
