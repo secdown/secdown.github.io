@@ -10,37 +10,77 @@
   <style>
     body {
       background: teal;
-      padding: 40px;
-      text-align: center;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
       font-family: sans-serif;
     }
 
-    img {
-      max-width: 300px;
-      display: block;
-      margin: 0 auto 20px auto;
+    .window {
+      width: 380px;
     }
 
-    .btn {
-      display: inline-block;
-      margin: 10px;
+    .content {
+      text-align: center;
+    }
+
+    .content img {
+      max-width: 260px;
+      margin: 10px 0;
+    }
+
+    .button-row {
+      margin-top: 10px;
     }
   </style>
 </head>
 
 <body>
 
-  <img src="https://media.tenor.com/gMFriGOwj0YAAAAe/invincible-are-you-sure.png" alt="Are you sure?">
+  <!-- WINDOW 1 -->
+  <div class="window">
 
-  <br>
+    <div class="title-bar">
+      <div class="title-bar-text">System Warning</div>
+    </div>
 
-  <a href="https://secdown.github.io/95button.html">
-    <button>Click if you're sure</button>
-  </a>
+    <div class="window-body content">
 
-  <a href="https://secdown.github.io/windowsninetyfuckingfive.html">
-    <button>Das ist Windows!</button>
-  </a>
+      <img src="https://media.tenor.com/gMFriGOwj0YAAAAe/invincible-are-you-sure.png" alt="Are you sure?">
+
+      <p>Are you sure you want to continue?</p>
+
+      <div class="button-row">
+        <a href="https://secdown.github.io/95button.html">
+          <button>Click if you're sure</button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- WINDOW 2 -->
+  <div class="window">
+
+    <div class="title-bar">
+      <div class="title-bar-text">System Access</div>
+    </div>
+
+    <div class="window-body content">
+
+      <div class="button-row">
+        <a href="https://secdown.github.io/windowsninetyfuckingfive.html">
+          <button>Das ist Windows!</button>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
 
 </body>
 </html>
