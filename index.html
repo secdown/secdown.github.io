@@ -1,86 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/png" href="gabriel.png">
-  <title>Have no fear, Gabriel is here</title>
+<meta charset="UTF-8">
+<title>Log On to Windows</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/98.css">
+<link rel="stylesheet" href="https://unpkg.com/98.css">
 
-  <style>
-    body {
-      background: teal;
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      font-family: sans-serif;
-    }
+<style>
 
-    .window {
-      width: 380px;
-    }
+body {
+    background: teal;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
 
-    .content {
-      text-align: center;
-    }
+.window {
+    width: 340px;
+}
 
-    .content img {
-      max-width: 260px;
-      margin: 10px 0;
-    }
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 15px;
+}
 
-    .button-row {
-      margin-top: 10px;
-    }
-  </style>
+.error {
+    color: darkred;
+    margin-top: 10px;
+}
+
+</style>
 </head>
 
 <body>
 
-  <!-- WINDOW 1 -->
-  <div class="window">
+<div class="window">
 
     <div class="title-bar">
-      <div class="title-bar-text">System Warning</div>
+        <div class="title-bar-text">
+            Log On to Windows
+        </div>
     </div>
 
-    <div class="window-body content">
+    <div class="window-body">
 
-      <img src="https://media.tenor.com/gMFriGOwj0YAAAAe/invincible-are-you-sure.png" alt="Are you sure?">
+        <div class="field-row-stacked">
+            <label>Username</label>
+            <input type="text" id="username">
+        </div>
 
-      <p>Are you sure you want to continue?</p>
+        <br>
 
-      <div class="button-row">
-        <a href="https://secdown.github.io/95button.html">
-          <button>Click if you're sure</button>
-        </a>
-      </div>
+        <div class="field-row-stacked">
+            <label>Password</label>
+            <input type="password" id="password">
+        </div>
 
-    </div>
-  </div>
+        <div class="buttons">
+            <button id="loginBtn">OK</button>
+            <button id="cancelBtn">Cancel</button>
+        </div>
 
-  <!-- WINDOW 2 -->
-  <div class="window">
-
-    <div class="title-bar">
-      <div class="title-bar-text">System Access</div>
-    </div>
-
-    <div class="window-body content">
-
-      <div class="button-row">
-        <a href="https://secdown.github.io/windowsninetyfuckingfive.html">
-          <button>Click To Go To Henry's Backyard</button>
-        </a>
-      </div>
+        <div class="error" id="error"></div>
 
     </div>
 
-  </div>
+</div>
+
+<script src="login.js"></script>
 
 </body>
 </html>
