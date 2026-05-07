@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Windows 95 Link Hub</title>
+
+<link rel="stylesheet" href="https://unpkg.com/98.css">
+
+<style>
+
+body {
+    background: teal;
+    margin: 0;
+    padding: 40px;
+    font-family: sans-serif;
+}
+
+.window {
+    width: 900px;
+    margin: auto;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.link-box {
+    background: silver;
+    border: 2px outset white;
+    padding: 20px;
+    text-align: center;
+}
+
+.link-box:hover {
+    border: 2px inset white;
+}
+
+.link-box a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+.link-box img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="window">
+
+    <div class="title-bar">
+        <div class="title-bar-text">
+            Windows 95 Hyperlink Directory
+        </div>
+    </div>
+
+    <div class="window-body">
+
+        <p>
+            Select a destination below.
+        </p>
+
+        <div class="links">
+
+            <div class="link-box">
+                <a href="https://secdown.github.io/windowsninetyfive.html">
+                    <img src="https://win98icons.alexmeub.com/icons/png/computer_explorer-4.png">
+                    Henry's Backyard
+                </a>
+            </div>
+
+            <div class="link-box">
+                <a href="https://secdown.github.io/95button.html">
+                    <img src="https://win98icons.alexmeub.com/icons/png/help_book_big-0.png">
+                    Warning Screen
+                </a>
+            </div>
+
+            <div class="link-box">
+                <a href="https://google.com">
+                    <img src="https://win98icons.alexmeub.com/icons/png/world-0.png">
+                    Internet
+                </a>
+            </div>
+
+            <div class="link-box">
+                <a href="#">
+                    <img src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-4.png">
+                    Documents
+                </a>
+            </div>
+
+            <div class="link-box">
+                <a href="#">
+                    <img src="https://win98icons.alexmeub.com/icons/png/media_player-0.png">
+                    Media Player
+                </a>
+            </div>
+
+            <div class="link-box">
+                <a href="#">
+                    <img src="https://win98icons.alexmeub.com/icons/png/msie1-4.png">
+                    Web Browser
+                </a>
+            </div>
+
+            <div class="link-box">
+                <a href="#">
+                    <img src="https://win98icons.alexmeub.com/icons/png/game_mine-0.png">
+                    Games
+                </a>
+            </div>
+
+            <div class="link-box">
+                <a href="#">
+                    <img src="https://win98icons.alexmeub.com/icons/png/notepad-1.png">
+                    Notes
+                </a>
+            </div>
+
+            <div class="link-box">
+                <a href="#">
+                    <img src="https://win98icons.alexmeub.com/icons/png/recycle_bin_full-4.png">
+                    Trash
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <button onclick="history.back()">
+                Back
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
